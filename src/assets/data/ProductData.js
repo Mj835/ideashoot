@@ -1,0 +1,205 @@
+import SampleImg1 from "../images/sampleImg1.png";
+import SampleImg2 from "../images/sampleImg2.png";
+import SampleImg3 from "../images/sampleImg3.png";
+import SampleImg4 from "../images/sampleImg4.png";
+import SampleImg5 from "../images/sampleImg5.png";
+
+export const ProductData = [
+  {
+    id: 1,
+    imgSrc: SampleImg1,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+
+  {
+    id: 2,
+    imgSrc: SampleImg2,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 3,
+    imgSrc: SampleImg3,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 4,
+    imgSrc: SampleImg4,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 5,
+    imgSrc: SampleImg5,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 6,
+    imgSrc: SampleImg1,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+
+  {
+    id: 7,
+    imgSrc: SampleImg2,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 8,
+    imgSrc: SampleImg3,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 9,
+    imgSrc: SampleImg4,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 10,
+    imgSrc: SampleImg5,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 11,
+    imgSrc: SampleImg1,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 12,
+    imgSrc: SampleImg2,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 13,
+    imgSrc: SampleImg3,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 14,
+    imgSrc: SampleImg4,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+  {
+    id: 15,
+    imgSrc: SampleImg5,
+    imgAlt: "Sample Images",
+    itemName: "Seamless Printed Neck T-shirt",
+    itemPrice: 240,
+    itemSalePrice: " 180",
+    button: "BUY NOW",
+    itemTitle: "HRX By Hrithik Roshan",
+    brandName: "HRX",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed auctor tempus egestas turpis tellus interdum integer consectetur. Ridiculus odio velit cursus turpis mattis.",
+  },
+];

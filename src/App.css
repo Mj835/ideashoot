@@ -1,38 +1,1340 @@
-.App {
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+  position: relative;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 1.5;
+  overflow-x: hidden;
+  font-family: "Nunito Sans", sans-serif;
+}
+
+.container {
+  position: relative;
+  display: block;
+  width: 1200px;
+  max-width: 90%;
+  margin: auto;
+}
+
+/* Navbar CSS */
+.navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding-top: 8px;
+  margin-bottom: 80px;
+}
+
+.signup-navWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-top: 8px;
+  margin-bottom: 80px;
+}
+
+/* UserProfile CSS */
+.userProfileWrapper {
+  margin: 0px 20px 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profileContent {
+  display: flex;
+}
+
+.profilePic {
+  margin-right: 25px;
+}
+
+h2 {
+  margin: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-weight: 900;
+  font-size: 28px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+p {
+  margin: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+}
+
+span {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+  margin: 0px;
+}
+
+.userDetails p {
+  width: 380px;
+}
+
+.socialIcons {
+  margin-bottom: 26px;
+}
+
+.icons {
+  margin-right: 36px;
+  cursor: pointer;
+}
+
+.icons:hover {
+  fill: #8a2be2;
+}
+
+.productCount {
+  text-align: right;
+  margin-right: 36px;
+}
+
+.productCount h2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+/* Product Card CSS */
+.productCard {
+  margin: 25px 0px;
+}
+
+.cardDetail {
+  margin: 12px;
+  width: 175px;
+}
+
+.cardDetail p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+.cardDetail span {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: rgba(43, 40, 40, 0.8);
+}
+
+.cardDetail span del {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.buyBtn {
+  background: #8a2be2;
+  border-radius: 2px;
+  border: none;
+  width: 171px;
+  height: 42px;
+  margin-top: 12px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buyBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.productCardWrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 25px;
+}
+
+/* Cart Icon CSS */
+.fa-stack[data-count]:after {
+  position: absolute;
+  right: -1%;
+  top: 15px;
+  content: attr(data-count);
+  font-size: 40%;
+  padding: 0.6em;
+  border-radius: 999px;
+  line-height: 0.75em;
+  color: #8a2be2;
+  text-align: center;
+  font-weight: bold;
+  background: white;
+  border-style: solid;
+}
+
+/* Product Details Page CSS */
+.productDetailWrapper {
+  margin: 60px 0px;
+}
+
+.row,
+.checkout-row {
+  display: flex;
+}
+
+.col {
+  flex: 50%;
+}
+
+.col-left {
+  flex: 65%;
+}
+
+.col-right {
+  flex: 35%;
+}
+
+.smallImages {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 35px;
+  width: 580px;
+}
+
+.centerImage {
+  margin: 0px 35px;
+}
+
+.productDetails {
+  margin: 20px 0px 20px 80px;
+}
+
+.productDetails h2 {
+  margin: 0px;
+}
+
+.productDetails h4 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+  margin: 0px;
+}
+
+.userProfile {
+  margin: 16px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.userProfile img {
+  margin-right: 12px;
+}
+
+.productData {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.productData span {
+  margin: 0px 10px;
+}
+
+.sp {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+}
+
+.descript {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+  margin-top: 6px;
+  margin-bottom: 16px;
+}
+
+/* OtherProduct CSS */
+.otherProducts {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.otherProducts h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #2b2828;
+  margin-bottom: 40px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.otherProductWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.otherPWrap {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.otherPdetails {
+  padding: 8px 15px;
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.otherPdetails span {
+  width: 108px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+.otherPdetails p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #000000;
+}
+
+.otherPdetails p del {
+  font-size: 12px;
+  line-height: 14.4px;
+}
+
+.otherBuy {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  padding: 12px;
+  background: #8a2be2;
+  border-radius: 2px;
+  border: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.otherBuy:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.sizeBtn,
+.colorsBtn {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.sizeBtn button {
+  border: 0.5px solid rgba(43, 40, 40, 0.8);
+  width: 36px;
+  height: 36px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 44px;
+  text-transform: uppercase;
+  color: rgba(43, 40, 40, 0.8);
+  background: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin-right: 12px;
+  margin-top: 10px;
+}
+
+.sizeBtn button:hover,
+.sizeBtn .selected {
+  background-color: #8a2be2;
+  color: #ffffff;
+  border-color: #8a2be2;
+}
+
+.sizeBtn .disable {
+  opacity: 0.2;
+}
+
+.sizeBtn .disable:hover {
+  background: none !important;
+  color: rgba(43, 40, 40, 0.8);
+  border-color: none !important;
+  cursor: not-allowed;
+}
+
+.colorsBtn button {
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  margin-top: 10px;
+  margin-bottom: 36px;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.colorsBtn button span {
+  position: absolute;
+  top: 3px;
+  left: 3.5px;
+}
+
+.form-group {
+  display: block;
+  margin-bottom: 15px;
+}
+
+.form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.form-group label {
+  position: relative;
+  cursor: pointer;
+}
+
+.form-group label:before {
+  content: "";
+  -webkit-appearance: none;
+  background: #abf8e1;
+  width: 36px;
+  height: 36px;
+  margin-right: 12px;
+  margin-top: 10px;
+  margin-bottom: 36px;
+  border: none;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05),
+    inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.form-group input:checked + label:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -20px;
+  left: 20px;
+  width: 12px;
+  height: 26px;
+  border: solid #ffffff;
+  border-width: 0 4px 4px 0;
+  transform: rotate(45deg);
+}
+
+.clr1 {
+  background: #abf8e1;
+}
+
+.clr2 {
+  background: #f88454;
+}
+
+.clr3 {
+  background: rgba(43, 40, 40, 0.8);
+}
+
+.clr4 {
+  background: #bff5ff;
+}
+
+.clr5 {
+  background: #ff0000;
+}
+
+.twoButtons {
+  display: flex;
+}
+
+.twoButtons button {
+  padding: 20px 46px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+
+.buyButton {
+  background: #8a2be2;
+  border-radius: 2px;
+  border: 2px solid #8a2be2;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  text-decoration: none;
+  transition-duration: 0.4s;
+}
+
+.buyButton:hover {
+  border: 2px solid #8a2be2;
+  background: transparent;
+  color: #8a2be2;
+}
+
+.wishlistButton {
+  display: flex;
+  justify-content: center;
+  align-items: self-end;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #8a2be2;
+  background: none;
+  border-color: #8a2be2;
+  border-radius: 2px;
+  border: 2px solid;
+  transition-duration: 0.4s;
+}
+
+.wishlistButton:hover {
+  border: 2px solid #8a2be2;
+  background: #8a2be2;
+  color: #ffffff;
+}
+
+/* Signup CSS */
+.signupWrapper {
+  background-image: url("./assets/images/signupBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.signupBox {
+  padding-bottom: 80px;
+}
+
+.signupDiv {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  padding: 80px;
+  width: 400px;
+  /* height: 441px; */
+  margin: auto;
+}
+
+.signupDiv h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inputBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding: 14px;
+  width: 270px;
+  margin-bottom: 20px;
+  /* height: 45px; */
+}
+
+.inputBox input {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  width: 100%;
+}
+
+.inputBox input::placeholder {
+  color: #ffffff;
+}
+
+.inputBox input:focus {
+  outline: none;
+}
+
+.inputBox input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+.inputBox input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.addressBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  padding: 14px;
+  width: 270px;
+  margin-bottom: 20px;
+}
+
+.addressBox textarea {
+  background: transparent;
+  border: none;
+  margin-left: 15px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  height: 90px;
+  width: 100%;
+}
+
+.addressBox textarea::placeholder {
+  color: #ffffff;
+}
+
+.addressBox textarea:focus {
+  outline: none;
+}
+
+.submitBtn {
+  background: #120052;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 16px 68px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin: 16px;
+}
+
+.finalSubmit {
+  background: #120052;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 16px 120px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin: 16px;
+}
+
+/* OtpScreen CSS */
+.otpscreenWrapper {
+  background-image: url("./assets/images/otpScreenBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+.otpDiv {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(20px);
+  border-radius: 50px;
+  padding: 80px;
+  width: 460px;
+  /* height: 441px; */
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.otpDiv h1 {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  margin-bottom: 42px;
+}
+
+.otpDiv input {
+  width: 55px !important;
+  height: 45px;
+  border: 1px solid #ffffff;
+  border-radius: 2px;
+  background: transparent;
+  margin: 0px 15px;
+  color: #000000;
+}
+
+.resendWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.otpSubmit {
+  background: #120052;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.15);
+  border-radius: 2px;
+  padding: 16px 130px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  border: none;
+  margin-top: 36px;
+}
+
+.resend {
+  margin-top: 4px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Signup Complete Screen Css */
+
+.signupCompleteWrapper {
+  background-image: url("./assets/images/signupCompleteBg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Checkout Page CSS */
+.checkoutWrapper {
+  padding: 0px 40px;
+}
+
+.checkoutWrapper h1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: #000000;
+}
+
+.backButton {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 27px;
+  cursor: pointer;
+}
+
+.backButton span {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #82798b;
+}
+
+.addressWrapper {
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  padding: 42px;
+}
+
+.billWrapper {
+  padding: 42px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.14);
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.checkoutItem {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  /* border-bottom: 1px solid rgba(43, 40, 40, 0.8); */
+}
+
+.checkoutItem input {
+  width: 18px;
+  height: 18px;
+  border: 2px solid#82798b;
+}
+
+.checkoutItem input:checked {
+  background-color: #82798b;
+}
+
+.cartItemImg {
+  margin: 24px 35px;
+}
+
+.itemName p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+  margin-bottom: 14px;
+}
+
+.priceDiv {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.priceDiv p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+}
+
+.priceDiv .originalPrice {
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+  margin-left: 7px;
+}
+
+.addressHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.addressHead p,
+.billWrapper p {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+.address {
+  padding-right: 55px;
+}
+
+.address textarea {
+  width: 100%;
+  border: none;
+  margin: 0px;
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+  resize: none;
+  max-height: 100px;
+}
+
+.address textarea:focus {
+  outline: none;
+}
+
+.priceCount,
+.totalPrice {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.priceCount p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+}
+
+.billWrapper hr {
+  margin: 21px 0px;
+}
+
+.payBtn {
+  margin-top: 20px;
+  padding: 16px 105px;
+  background: #8a2be2;
+  border-radius: 2px;
+  border: none;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  width: 100%;
+}
+
+.payBtn:hover {
+  box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24),
+    0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Order Page CSS */
+.orderItems {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  flex-direction: column;
+}
+
+.orderedItemWrapper {
+  width: 730px;
+  padding: 27px 0px;
+  border-top: 1px solid #eeeeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.orderedItemWrapper img {
+  margin-right: 36px;
+}
+
+.authorProfile {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.orderDetail p,
+.orderDetail span {
+  margin-bottom: 13px;
+}
+
+.authorProfile {
+  margin-top: 13px;
+  margin-bottom: 5px;
+}
+
+.authorProfile img {
+  margin-right: 12px;
+}
+
+.authorProfile span {
+  margin: 0px;
+}
+
+.orderDate {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: #2b2828;
+}
+
+.orderName,
+.authorProfile span,
+.brandName {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.04em;
+  text-transform: capitalize;
+  color: #2b2828;
+}
+
+.note {
+  border-top: 1px solid #eeeeee;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  letter-spacing: 0.04em;
+  color: rgba(43, 40, 40, 0.8);
+  padding-top: 24px;
+}
+
+/* Footer CSS */
+.footerWrapper {
+  background-image: url("./assets/images/FooterBg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 45px 0px;
+  margin-top: 55px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer p {
+  font-family: "Nunito Sans", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: right;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+/* ------------ Responsive CSS ------------- */
+@media (max-width: 1024px) {
+  .productDetails {
+    margin: 0px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .otherProductWrapper {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .otherPdetails {
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .twoButtons button {
+    padding: 15px 30px;
+  }
+
+  .twoButtons {
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .firstImage {
+    width: 400px;
+  }
+
+  .smallImages {
+    width: auto;
+    justify-content: flex-start;
+  }
+
+  .smallImages img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .centerImage {
+    margin: 0px 20px;
+  }
+
+  .signupBox {
+    padding: 0px;
+  }
+
+  .signupDiv,
+  .otpDiv {
+    padding: 40px;
+  }
+
+  .checkout-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .navWrapper {
+    margin-bottom: 40px;
+  }
+
+  .userProfileWrapper {
+    margin: 0px 10px;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 25px;
+  }
+
+  .productCount {
+    text-align: left;
+  }
+
+  .socialIcons {
+    margin-bottom: 10px;
+  }
+
+  .otherProductWrapper {
+    justify-content: space-around;
+    gap: 0px;
+  }
+
+  .otherPdetails {
+    padding: 5px;
+    width: 120px;
+  }
+
+  .row {
+    flex-wrap: wrap;
+  }
+
+  .smallImages {
+    margin-bottom: 25px;
+    justify-content: center;
+  }
+
+  .firstImage {
+    display: block;
+    margin: 0 auto;
+  }
+
+  .orderedItemWrapper {
+    width: auto;
+  }
+}
+
+@media (max-width: 450px) {
+  .userDetails p {
+    width: auto;
+  }
+
+  span {
+    font-size: 16px;
+  }
+
+  .productCardWrapper {
+    gap: 0px;
+  }
+
+  .productCard img {
+    display: block;
+    margin: 0 auto;
+    width: 150px;
+  }
+
+  .buyBtn,
+  .cardDetail {
+    width: 150px;
+  }
+
+  .cardDetail p,
+  .cardDetail span {
+    font-size: 16px;
+  }
+
+  .twoButtons button {
+    padding: 15px 25px;
+  }
+
+  .firstImage {
+    width: 300px;
+  }
+
+  .smallImages img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .signupDiv,
+  .otpDiv {
+    width: auto;
+  }
+
+  .submitBtn {
+    padding: 16px 50px;
+  }
+
+  .checkoutItem,
+  .priceDiv {
+    flex-wrap: wrap;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  .itemName p,
+  .orderDate,
+  .orderName,
+  .authorProfile span,
+  .brandName {
+    font-size: 18px;
+  }
+
+  .priceDiv p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+
+  .cartItemImg {
+    margin: 15px;
+  }
+
+  .priceDiv .originalPrice {
+    margin-left: 0px;
+  }
+
+  .addressWrapper,
+  .orderDetail {
+    margin-top: 15px;
+  }
+
+  .payBtn {
+    padding: 16px 60px;
+  }
+
+  .orderedItemWrapper {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  .checkoutWrapper h1 {
+    font-size: 30px;
   }
 }
