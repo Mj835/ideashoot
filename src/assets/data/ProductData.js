@@ -1,8 +1,8 @@
-import SampleImg1 from "../images/sampleImg1.png";
-import SampleImg2 from "../images/sampleImg2.png";
-import SampleImg3 from "../images/sampleImg3.png";
-import SampleImg4 from "../images/sampleImg4.png";
-import SampleImg5 from "../images/sampleImg5.png";
+import SampleImg1 from "../images/1.png";
+import SampleImg2 from "../images/2.png";
+import SampleImg3 from "../images/3.png";
+import SampleImg4 from "../images/4.png";
+import SampleImg5 from "../images/5.png";
 
 export const ProductData = [
   {

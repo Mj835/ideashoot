@@ -197,7 +197,7 @@ span {
 .fa-stack[data-count]:after {
   position: absolute;
   right: -1%;
-  top: 15px;
+  top: 25px;
   content: attr(data-count);
   font-size: 40%;
   padding: 0.6em;

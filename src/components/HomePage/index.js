@@ -2,13 +2,13 @@ import React from "react";
 import Footer from "../Footer";
 import Navbar from "../Navbar";
 import ProductCards from "../ProductCards";
-import UserProfile from "../UserProfile";
+// import UserProfile from "../UserProfile";
 
 const HomePage = () => {
   return (
     <>
       <Navbar />
-      <UserProfile />
+      {/* <UserProfile /> */}
       <ProductCards />
       <Footer />
     </>
