@@ -25,7 +25,7 @@ const ProductDetail = () => {
   const proid = useParams();
   const proDetail = ProductData.filter((x) => x.id == proid.id);
   const product = proDetail[0];
-  console.log(product);
+  // console.log(product);
 
   const dispatch = useDispatch();
 
@@ -155,7 +155,7 @@ const ProductDetail = () => {
                 </div>
 
                 <div className="twoButtons">
-                  <Link to="/signup" style={{ textDecoration: "none" }}>
+                  <Link to="/checkout" style={{ textDecoration: "none" }}>
                     <button
                       onClick={() => handleCart(product)}
                       className="buyButton"
