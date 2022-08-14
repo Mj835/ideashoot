@@ -15,7 +15,7 @@ export const QRCode = ({url}) => {
     }, []);
 
     
-    const options = useMemo(() => createQROptions(url, size, 'transparent', '#2a2a2a'), [url, size]);
+    const options = useMemo(() => createQROptions(url, size, 'transparent', 'white'), [url, size]);
 
     const qr = useMemo(() => new QRCodeStyling(), []);
     useEffect(() => qr.update(options), [qr, options]);
