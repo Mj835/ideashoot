@@ -96,14 +96,14 @@ const Checkout = () => {
 
                 <div className="priceCount">
                   <p>Subtotal</p>
-                  <p>SOL.{totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
+                  <p>SOL {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
                 </div>
 
                 <hr />
 
                 <div className="totalPrice">
                   <p>Total</p>
-                  <p>SOL. {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
+                  <p>SOL  {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
                 </div>
 
                 <Link
@@ -112,7 +112,7 @@ const Checkout = () => {
                   className="backButton"
                 >
                   <button className="payBtn">
-                    PAY SOL. {totalFinalAmount === "" ? 0 : totalFinalAmount}
+                    PAY SOL  {totalFinalAmount === "" ? 0 : totalFinalAmount}
                   </button>
                 </Link>
               </div>

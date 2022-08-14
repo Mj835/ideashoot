@@ -268,7 +268,7 @@ span {
   line-height: 120%;
   letter-spacing: 0.04em;
   text-transform: capitalize;
-  color: #2b2828;
+  /* color: #2b2828; */
   margin: 0px;
 }
 
@@ -301,7 +301,7 @@ span {
   font-size: 14px;
   line-height: 120%;
   letter-spacing: 0.04em;
-  color: rgba(43, 40, 40, 0.8);
+  /* color: rgba(43, 40, 40, 0.8); */
 }
 
 .descript {

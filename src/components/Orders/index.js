@@ -15,8 +15,8 @@ import {
   encodeURL,
   findReference,
   FindReferenceError,
-  validateTransfer,
-  ValidateTransferError,
+  // validateTransfer,
+  // ValidateTransferError,
 } from "@solana/pay";
 import { QRCode } from "../QRCode";
 
@@ -192,7 +192,7 @@ const Orders = () => {
 
           {url && status === PaymentStatus.Pending && <QRCode url={url} />}
 
-          {status && <>Transfer status : {status}</>}
+          {status && <h2>Transfer status : {status}</h2>}
         </div>
       </div>
       <Footer />
