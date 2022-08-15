@@ -62,7 +62,7 @@ const Checkout = () => {
   // };
 
   const totalFinalAmount = state.reduce(
-    (a, c) => a + parseInt(c.itemSalePrice),
+    (a, c) => a + Number(c.itemSalePrice),
     0
   );
 
@@ -90,58 +90,20 @@ const Checkout = () => {
             </div>
 
             <div className="col-right">
-              <div className="addressWrapper">
-                <div className="addressHead">
-                  <p>Address</p>
-                  <MdEdit
-                    color="#82798B"
-                    size={18}
-                    style={{ cursor: "pointer" }}
-                    onClick={() => setDisabled(!disabled)}
-                  />
-                </div>
 
-                <div className="address">
-                  <textarea
-                    placeholder="Your Address Here..."
-                    id=""
-                    cols="10"
-                    rows="10"
-                    required
-                    value={address}
-                    onChange={(e) => setAddress(e.target.value)}
-                    disabled={disabled}
-                  ></textarea>
-                </div>
-              </div>
               <div className="billWrapper">
                 <p>Billing Summary</p>
 
                 <div className="priceCount">
                   <p>Subtotal</p>
-                  <p>Rs.{totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
-                </div>
-
-                <div className="priceCount">
-                  <p>Discount</p>
-                  <p>Rs. 20</p>
-                </div>
-
-                <div className="priceCount">
-                  <p>Shipping</p>
-                  <p>Rs. 00</p>
-                </div>
-
-                <div className="priceCount">
-                  <p>Tax</p>
-                  <p>Rs. 20</p>
+                  <p>SOL {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
                 </div>
 
                 <hr />
 
                 <div className="totalPrice">
                   <p>Total</p>
-                  <p>Rs. {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
+                  <p>SOL  {totalFinalAmount === "" ? 0 : totalFinalAmount}</p>
                 </div>
 
                 <Link
@@ -150,7 +112,7 @@ const Checkout = () => {
                   className="backButton"
                 >
                   <button className="payBtn">
-                    PAY Rs. {totalFinalAmount === "" ? 0 : totalFinalAmount}
+                    PAY SOL  {totalFinalAmount === "" ? 0 : totalFinalAmount}
                   </button>
                 </Link>
               </div>

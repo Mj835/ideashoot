@@ -8,7 +8,6 @@ const HomePage = () => {
   return (
     <>
       <Navbar />
-      {/* <UserProfile /> */}
       <ProductCards />
       <Footer />
     </>

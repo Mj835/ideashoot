@@ -11,7 +11,7 @@ const Footer = () => {
           <Link to="/">
             <img src={footerLogo} alt="Footer Logo" width={200} />
           </Link>
-          <p>2022, Copyright of Ideashoots Technology LLP</p>
+          <p>2022, Copyright of SolKicks Technology LLP</p>
         </div>
       </div>
     </div>

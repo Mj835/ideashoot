@@ -9,8 +9,10 @@ const Card = (props) => {
       <div className="cardDetail">
         <p>{props.card.itemName}</p>
 
-        <span>
-          Rs.{props.card.itemSalePrice} <del>Rs.{props.card.itemPrice}</del>
+        <span className="productPrice">
+          SOL {props.card.itemSalePrice}
+          <br />
+          <del>SOL {props.card.itemPrice}</del>
         </span>
 
         <Link to={`/product-detail/${props.card.id}`}>
